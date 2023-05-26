@@ -115,10 +115,15 @@ body {
 }
 
 .container {
-    width: 100vh;
     background-color: rgb(240, 243, 244 );
-    margin-top: 2rem;
+    margin: 2rem auto;
+    border-radius: 30px;
+    max-width: 900px;
 
+}
+
+.btn {
+    margin: 2rem 10rem;
 }
 
 .form-label {
@@ -251,12 +256,12 @@ button {
     border: 1px solid black;
 }
 
-@media screen and (max-width:820px){
+@media screen and (max-width:768px){
     .mainlogo {
         font-size: 3rem;
     }
     .headsearch {
-        height: 1.3rem;
+        height: 0.5rem;
         
     }
     .headsearch button {
@@ -279,5 +284,78 @@ button {
     }
     .nav a {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px){
+   
+   
+    .header-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .mainlogo {
+        font-size: 4rem;
+        padding: 0;
+    }
+    .headsearch {
+        display: none;
+        
+    }
+  
+    .account img {
+        width: 25px;
+    
+    }
+    .account .sesion {
+        width: 20px;
+    }
+    .account span {
+        display: none;
+
+    }
+    .nav {
+        margin-top: 0.5rem;
+        height: 30px;
+    }
+    .nav a {
+        font-size: 0.8rem;
+    }
+    
+    
+
+    .reds {
+        width: 100%;
+    }
+    .social p{
+        width: 80%;
+        font-size: 0.8rem;
+        margin: 1rem;
+    }
+    .reds button {
+        width: 100%;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+   
+    .socialmedia img {
+        width: 70%;
+       
+    }
+
+    .finalfooter h3 {
+        font-size: 0.6rem;
+        margin: 1rem 2rem;
+    }
+    
+    .finalfooter li {
+        margin: 1rem 2rem;
+    }
+    .finalfooter a {
+       font-size: 0.5rem;
+    }
+    .pay img {
+        width: 60%;
     }
 }

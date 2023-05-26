@@ -125,11 +125,16 @@ body {
     height: 700px;
 }
 
+
+
 .title h1 {
     font-size: 4rem;
     text-align: center;
-    padding: 2rem;    
+    padding: 2rem; 
+    font-weight: bold;   
 }
+
+
 
 .title p {
     max-width: 800px;
@@ -160,14 +165,215 @@ body {
 .textr {
     margin: 5rem 0 3rem 2rem;
 }
+.textr span {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
 
 .textr-2 {
     margin: 5rem 3rem 3rem 2rem;
+}
+.textr-2 span {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
 }
 
 
 
 
+
+
+@media screen and (max-width:768px){
+    .mainlogo {
+        font-size: 3rem;
+    }
+    .headsearch {
+        height: 0.5rem;
+        
+    }
+    .headsearch button {
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+    .account img {
+        width: 25px;
+    }
+    .account .sesion {
+        width: 20px;
+    }
+    .account span {
+        font-size: 0.8rem;
+
+    }
+    .nav {
+        margin-top: 0.5rem;
+        height: 30px;
+    }
+    .nav a {
+        font-size: 0.8rem;
+    }
+
+    .main-img {
+        background-image: url("../img/blog/mainblog.jpg");
+        height: 400px;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat; 
+        margin-top: 1rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+        margin: 0 1.5rem;
+    }
+
+    .recipes {
+        flex-direction: column;
+    }
+
+    .imgr {
+        width: 80%;
+        border-radius: 50%;
+        margin: 0 auto;
+    
+    }
+    .imgr img {
+        border-radius: 10px;
+    }
+
+    .textr {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+
+    .textr-2 {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px){
+   
+   
+    .header-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .mainlogo {
+        font-size: 4rem;
+        padding: 0;
+    }
+    .headsearch {
+        display: none;
+        
+    }
+  
+    .account img {
+        width: 25px;
+    
+    }
+    .account .sesion {
+        width: 20px;
+    }
+    .account span {
+        display: none;
+
+    }
+    .nav {
+        margin-top: 0.5rem;
+        height: 30px;
+    }
+    .nav a {
+        font-size: 0.8rem;
+    }
+    
+   
+    .main-img {
+        background-image: url("../img/blog/mainblog.jpg");
+        height: 250px;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat; 
+        margin-top: 0.8rem;
+    }
+
+   
+    
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+        margin: 0 1.5rem;
+    }
+
+    .recipes {
+        flex-direction: column;
+    }
+
+    .imgr {
+        width: 100%;
+        border-radius: 50%;
+    
+    }
+    .imgr img {
+        border-radius: 10px;
+    }
+
+    .textr {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+
+    .textr-2 {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+
+    .reds {
+        width: 100%;
+    }
+    .social p{
+        width: 80%;
+        font-size: 0.8rem;
+        margin: 1rem;
+    }
+    .reds button {
+        width: 100%;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+   
+    .socialmedia img {
+        width: 70%;
+       
+    }
+
+    .finalfooter h3 {
+        font-size: 0.6rem;
+        margin: 1rem 2rem;
+    }
+    
+    .finalfooter li {
+        margin: 1rem 2rem;
+    }
+    .finalfooter a {
+       font-size: 0.5rem;
+    }
+    .pay img {
+        width: 60%;
+    }
+}
 
 
 
