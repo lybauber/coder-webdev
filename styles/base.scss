@@ -1,3 +1,6 @@
+$police-blue: #394867;
+$cultured: #F1F6F9;
+
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -18,14 +21,12 @@ body {
     text-decoration: none;
     text-align: center;
     padding-left: 2rem;
-    color: rgb(28, 27, 27);
-    
+    color: black;
 }
 
 
 .header-contiainer a:visited {
-    color: rgb(28, 27, 27);
-
+    color: black;
 }
 
 .mainlogo {
@@ -33,7 +34,6 @@ body {
     font-size: 5.5rem;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    
 }
 .mainlogo:hover {
     cursor: pointer;
@@ -49,7 +49,7 @@ body {
 .search {
     text-align: center;
     width: 70%;
-    border-radius: 20px;
+    border-radius: 10px;
    
 }
 
@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items:center;
-    background-color: #394867;
+    background-color: $police-blue;
     height: 50px;
 
    
@@ -103,84 +103,19 @@ body {
 .nav a {
     text-decoration: none;
     font-size: 1rem;
-    color: aliceblue;
+    color: $cultured;
     transition: color 0.5s;
 
 }
 
 .nav a:hover {
-    background-color: #F1F6F9;
+    background-color: $cultured;
     color: #17242b;
     padding: 0.9rem;
     opacity: 0.5;
     border-radius: 25px;
-    font-weight: bold;   
-}
-.row {
-    margin-left: 4rem;
-}
-.atleta-ti{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.atleta-ti h1 {
-    padding: 2rem;
-    font-size: 5rem;
     font-weight: bold;
 }
-.atleta-ti p {
-    font-size: 1.2rem;
-    width: 80%;
-    text-align: center;
-    font-weight: 600;
-}
-.container {
-    margin-top: 3rem;
-}
-.card {
-    margin: 2rem 0;
-    transition: box-shadow 1.5s,  transform 1.5s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    cursor: pointer;
-    box-shadow: 2px 2px 4px #212A3E;
-}
-
-.card h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .social {
     width: 100%;
@@ -188,7 +123,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 60px 0px 0px;
-    background-color: #F1F6F9;
+    background-color: $cultured;
     padding: 20px;
 
 }
@@ -202,8 +137,8 @@ body {
 .register  {
     border-radius: 20px;
     padding: 0.5rem;
-    background-color: #394867;
-    color: #F1F6F9;
+    background-color: $police-blue;
+    color: $cultured;
     border: 1px solid black;
     text-decoration: none;
     margin: 0px 100px;
@@ -247,8 +182,8 @@ body {
     justify-content: space-evenly;
     margin: 0px;
     padding: 50px;
-    background-color: #394867;
-    color: #F1F6F9;
+    background-color: $police-blue;
+    color: $cultured;
 }
 
 .titlefooter {
@@ -269,7 +204,7 @@ body {
 }
 
 .finalfooter li:hover {
-    background-color: aliceblue;
+    background-color: $cultured;
     opacity: 0.5;
     
 }
@@ -277,7 +212,7 @@ body {
 .finalfooter a {
     text-decoration: none;
     font-size: 1rem;
-    color: #F1F6F9;
+    color: $cultured;
     
 }
 .finalfooter a:hover {
@@ -301,8 +236,8 @@ body {
 button {
     border-radius: 20px;
     padding: 10px;
-    background-color: #394867;
-    color: #F1F6F9;
+    background-color: $police-blue;
+    color: $cultured;
     border: 1px solid black;
 }
 
@@ -334,79 +269,5 @@ button {
     }
     .nav a {
         font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width:576px){
-   
-   
-    .header-container {
-        width: 100%;
-        justify-content: space-around;
-    }
-    .mainlogo {
-        font-size: 4rem;
-        padding: 0;
-    }
-    .headsearch {
-        display: none;
-        
-    }
-  
-    .account img {
-        width: 25px;
-    
-    }
-    .account .sesion {
-        width: 20px;
-    }
-    .account span {
-        display: none;
-
-    }
-    .nav {
-        margin-top: 0.5rem;
-        height: 30px;
-    }
-    .nav a {
-        font-size: 0.8rem;
-    }
-    .row {
-        margin-left: 2rem;
-    }
-    
-    .reds {
-        width: 100%;
-    }
-    .social p{
-        width: 80%;
-        font-size: 0.8rem;
-        margin: 1rem;
-    }
-    .reds button {
-        width: 100%;
-        font-size: 0.8rem;
-        margin-left: 0;
-    }
-
-   
-    .socialmedia img {
-        width: 70%;
-       
-    }
-
-    .finalfooter h3 {
-        font-size: 0.6rem;
-        margin: 1rem 2rem;
-    }
-    
-    .finalfooter li {
-        margin: 1rem 2rem;
-    }
-    .finalfooter a {
-       font-size: 0.5rem;
-    }
-    .pay img {
-        width: 60%;
     }
 }
