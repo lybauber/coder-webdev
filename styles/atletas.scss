@@ -1,3 +1,41 @@
-@use "base.scss";
-$police-blue: #394867;
-$cultured: #F1F6F9;
+@use "settings.scss";
+@use "components.scss";
+
+.row {
+    margin-left: 4rem;
+}
+.atleta-ti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.atleta-ti h1 {
+    padding: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.atleta-ti p {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+}
+.container {
+    margin-top: 3rem;
+}
+.card {
+    margin: 2rem 0;
+    transition: box-shadow 1.5s,  transform 1.5s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #212A3E;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+@use "settings.scss";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1180px;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--color-police-blue);
+    color: var(--color-cultured);
+    border: 1px solid black;
+}

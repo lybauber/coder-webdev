@@ -1,0 +1,19 @@
+@use "settings.scss";
+@use "components.scss";
+
+.container {
+    background-color: var(--color-cultured);
+    margin: 2rem auto;
+    border-radius: 30px;
+    max-width: 900px;
+
+}
+
+.btn {
+    margin: 2rem 10rem;
+}
+
+.form-label {
+    margin-top: 2rem;
+    font-weight: bold;
+}

@@ -1,5 +1,4 @@
-$police-blue: #394867;
-$cultured: #F1F6F9;
+@use "settings.scss";
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -21,12 +20,14 @@ body {
     text-decoration: none;
     text-align: center;
     padding-left: 2rem;
-    color: black;
+    color: var(--color-eerie-black);
+    
 }
 
 
 .header-contiainer a:visited {
-    color: black;
+    color: var(--color-eerie-black);
+
 }
 
 .mainlogo {
@@ -34,6 +35,7 @@ body {
     font-size: 5.5rem;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
+    
 }
 .mainlogo:hover {
     cursor: pointer;
@@ -49,7 +51,7 @@ body {
 .search {
     text-align: center;
     width: 70%;
-    border-radius: 10px;
+    border-radius: 20px;
    
 }
 
@@ -62,8 +64,8 @@ body {
 
 .headsearch button:hover {
     cursor: pointer;
-    background-color: #17242b;
-    color: #4f5259;
+    background-color: var(--color-dark-gunmetal);
+    color: var(--color-david-gray);
 }
 
 .account {
@@ -94,7 +96,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items:center;
-    background-color: $police-blue;
+    background-color: var(--color-police-blue);
     height: 50px;
 
    
@@ -103,19 +105,20 @@ body {
 .nav a {
     text-decoration: none;
     font-size: 1rem;
-    color: $cultured;
+    color: var(--color-cultured);
     transition: color 0.5s;
 
 }
 
 .nav a:hover {
-    background-color: $cultured;
-    color: #17242b;
+    background-color: var(--color-cultured);
+    color: var(--color-dark-gunmetal);
     padding: 0.9rem;
     opacity: 0.5;
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: bold;   
 }
+
 
 .social {
     width: 100%;
@@ -123,7 +126,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 60px 0px 0px;
-    background-color: $cultured;
+    background-color: var(--color-cultured);
     padding: 20px;
 
 }
@@ -137,8 +140,8 @@ body {
 .register  {
     border-radius: 20px;
     padding: 0.5rem;
-    background-color: $police-blue;
-    color: $cultured;
+    background-color: var(--color-police-blue);
+    color: var(--color-cultured);
     border: 1px solid black;
     text-decoration: none;
     margin: 0px 100px;
@@ -182,8 +185,8 @@ body {
     justify-content: space-evenly;
     margin: 0px;
     padding: 50px;
-    background-color: $police-blue;
-    color: $cultured;
+    background-color: var(--color-police-blue);
+    color: var(--color-cultured);
 }
 
 .titlefooter {
@@ -204,7 +207,7 @@ body {
 }
 
 .finalfooter li:hover {
-    background-color: $cultured;
+    background-color: var(--color-cultured);
     opacity: 0.5;
     
 }
@@ -212,11 +215,11 @@ body {
 .finalfooter a {
     text-decoration: none;
     font-size: 1rem;
-    color: $cultured;
+    color: var(--color-cultured);
     
 }
 .finalfooter a:hover {
-    color: #212A3E;
+    color: var(--color-yankees-blue);
     font-weight: bold;
 }
 .payfooter h3 {
@@ -236,10 +239,14 @@ body {
 button {
     border-radius: 20px;
     padding: 10px;
-    background-color: $police-blue;
-    color: $cultured;
+    background-color: var(--color-police-blue);
+    color: var(--color-cultured);
     border: 1px solid black;
 }
+
+
+
+
 
 @media screen and (max-width:768px){
     .mainlogo {
@@ -269,5 +276,78 @@ button {
     }
     .nav a {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px){
+   
+   
+    .header-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .mainlogo {
+        font-size: 4rem;
+        padding: 0;
+    }
+    .headsearch {
+        display: none;
+        
+    }
+  
+    .account img {
+        width: 25px;
+    
+    }
+    .account .sesion {
+        width: 20px;
+    }
+    .account span {
+        display: none;
+
+    }
+    .nav {
+        margin-top: 0.5rem;
+        height: 30px;
+    }
+    .nav a {
+        font-size: 0.8rem;
+    }
+    
+    
+
+    .reds {
+        width: 100%;
+    }
+    .social p{
+        width: 80%;
+        font-size: 0.8rem;
+        margin: 1rem;
+    }
+    .reds button {
+        width: 100%;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+   
+    .socialmedia img {
+        width: 70%;
+       
+    }
+
+    .finalfooter h3 {
+        font-size: 0.6rem;
+        margin: 1rem 2rem;
+    }
+    
+    .finalfooter li {
+        margin: 1rem 2rem;
+    }
+    .finalfooter a {
+       font-size: 0.5rem;
+    }
+    .pay img {
+        width: 60%;
     }
 }

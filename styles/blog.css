@@ -323,48 +323,68 @@ button {
     width: 60%;
   }
 }
-.row {
-  margin-left: 4rem;
+.main-img {
+  background-image: url("../img/blog/mainblog.jpg");
+  background-size: cover;
+  height: 700px;
 }
 
-.atleta-ti {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.atleta-ti h1 {
-  padding: 2rem;
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-.atleta-ti p {
-  font-size: 1.2rem;
-  width: 80%;
+.title h1 {
+  font-size: 4rem;
   text-align: center;
-  font-weight: 600;
-}
-
-.container {
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 2rem 0;
-  transition: box-shadow 1.5s, transform 1.5s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  cursor: pointer;
-  box-shadow: 2px 2px 4px #212A3E;
-}
-
-.card h5 {
-  font-size: 1.5rem;
+  padding: 2rem;
   font-weight: bold;
 }
 
-/*# sourceMappingURL=atletas.css.map */
+.title p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recipes {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 5rem;
+}
+
+.imgr {
+  width: 140%;
+}
+
+.imgr img {
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.textr {
+  margin: 5rem 0 3rem 2rem;
+}
+
+.textr span {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.textr-2 {
+  margin: 5rem 3rem 3rem 2rem;
+}
+
+.textr-2 span {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=blog.css.map */
