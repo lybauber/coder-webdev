@@ -1,0 +1,166 @@
+@use "settings.scss";
+@use "components.scss";
+@use "elements.scss";
+@use "tools.scss";
+
+.main-img {
+    background-image: url("../img/blog/mainblog.jpg");
+    background-size: cover;
+    height: 700px;
+
+}
+
+
+
+.title h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem; 
+    font-weight: bold; 
+    
+}
+
+
+
+.title p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.recipes {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 5rem;
+
+}
+
+.imgr {
+    width: 140%;
+
+    
+}
+.imgr img {
+    border-radius: 10px;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.textr {
+    margin: 5rem 0 3rem 2rem;
+
+}
+.textr span {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.textr-2 {
+    margin: 5rem 3rem 3rem 2rem;
+
+}
+.textr-2 span {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+
+@include tools.tablet {
+    
+    .main-img {
+        background-image: url("../img/blog/mainblog.jpg");
+        height: 400px;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat; 
+        margin-top: 1rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+        margin: 0 1.5rem;
+    }
+
+    .recipes {
+        flex-direction: column;
+    }
+
+    .imgr {
+        width: 80%;
+        border-radius: 50%;
+        margin: 0 auto;
+    
+    }
+    .imgr img {
+        border-radius: 10px;
+    }
+
+    .textr {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+
+    .textr-2 {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+}
+
+@include tools.phone {
+    .main-img {
+        background-image: url("../img/blog/mainblog.jpg");
+        height: 250px;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat; 
+        margin-top: 0.8rem;
+    }
+
+   
+    
+    .title h1 {
+        font-size: 3rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+        margin: 0 1.5rem;
+    }
+
+    .recipes {
+        flex-direction: column;
+    }
+
+    .imgr {
+        width: 100%;
+        border-radius: 50%;
+    
+    }
+    .imgr img {
+        border-radius: 10px;
+    }
+
+    .textr {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+
+    .textr-2 {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+    }
+}

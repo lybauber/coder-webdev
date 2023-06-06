@@ -1,8 +1,12 @@
 @use "settings.scss";
 @use "components.scss";
+@use "elements.scss";
+@use "tools.scss";
 
 .row {
     margin-left: 4rem;
+
+    
 }
 .atleta-ti{
     display: flex;
@@ -38,4 +42,11 @@
 .card h5 {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+
+@include tools.phone {
+    .row {
+        margin-left: 2rem;
+    }
 }

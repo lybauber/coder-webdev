@@ -1,0 +1,14 @@
+@use "settings.scss";
+
+
+@mixin tablet {
+    @media screen and (max-width: settings.$breakpoint-md){
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: settings.$breakpoint-sm){
+        @content;
+    }
+}

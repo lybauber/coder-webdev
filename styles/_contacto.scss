@@ -1,5 +1,8 @@
 @use "settings.scss";
 @use "components.scss";
+@use "elements.scss";
+@use "tools.scss";
+
 
 .container {
     background-color: var(--color-cultured);
@@ -8,7 +11,9 @@
     max-width: 900px;
 
 }
-
+.contacto {
+    margin-left: 0;
+}
 .btn {
     margin: 2rem 10rem;
 }

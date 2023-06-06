@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "sass": "sass styles/main.scss styles/main.css",
-    "sass": "sass styles/contacto.scss styles/contacto.css",
-    "sass": "sass styles/atletas.scss styles/atletas.css",
-    "sass": "sass styles/blog.scss styles/blog.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass styles/main.scss styles/main.css"
   },
   "keywords": [],
   "author": "",
