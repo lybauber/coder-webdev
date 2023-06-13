@@ -109,7 +109,7 @@ body {
     align-items:center;
     background-color: var(--color-police-blue);
     height: 50px;
-
+    
    
 }
 
@@ -124,10 +124,10 @@ body {
 .nav a:hover {
     background-color: var(--color-cultured);
     color: var(--color-dark-gunmetal);
-    padding: 0.9rem;
+    padding: 1rem;
     opacity: 0.5;
-    border-radius: 25px;
-    font-weight: bold;   
+    border-radius: 15px;
+       
 }
 
 
@@ -169,8 +169,8 @@ body {
     text-align: center;
 }
 .reds button {
-    margin: 0 40%;
-    font-size: 10px;
+    margin: 0 20px;
+    font-size: 20px;
 
 
 }
@@ -182,8 +182,8 @@ body {
 }
 
 .media {
-    margin: 13px;
-    width: 30px;
+    margin: 20px;
+    width: 45px;
     
     
 }
@@ -191,12 +191,6 @@ body {
 .media img {
     border-radius: 80%;
 
-    @include tools.phone {
-        .media img {
-            width: 70%;
-           
-        } 
-    }
 }
 
 
@@ -224,14 +218,16 @@ body {
     margin: 20px 30px;
     text-align: left;
     font-weight: 100;
-    padding: 0.4rem;
-    transition: background-color 0.5s;
-    
+    padding: 0.6rem;
+   
 }
 
 .finalfooter li:hover {
-    background-color: var(--color-cultured);
+    background-color: var(--color-eerie-black);
     opacity: 0.5;
+    border-radius: 10px;
+   
+    
     
 }
 
@@ -240,10 +236,10 @@ body {
     font-size: 1rem;
     color: var(--color-cultured);
     
+    
 }
 .finalfooter a:hover {
-    color: var(--color-yankees-blue);
-    font-weight: bold;
+    width: 100%;
 }
 .payfooter h3 {
     text-align: center;

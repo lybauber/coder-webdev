@@ -139,10 +139,9 @@ body {
 .nav a:hover {
   background-color: var(--color-cultured);
   color: var(--color-dark-gunmetal);
-  padding: 0.9rem;
+  padding: 1rem;
   opacity: 0.5;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 15px;
 }
 
 .social {
@@ -182,8 +181,8 @@ body {
 }
 
 .reds button {
-  margin: 0 40%;
-  font-size: 10px;
+  margin: 0 20px;
+  font-size: 20px;
 }
 
 .socialmedia {
@@ -192,17 +191,12 @@ body {
 }
 
 .media {
-  margin: 13px;
-  width: 30px;
+  margin: 20px;
+  width: 45px;
 }
 
 .media img {
   border-radius: 80%;
-}
-@media screen and (max-width: 576px) {
-  .media img .media img {
-    width: 70%;
-  }
 }
 
 .finalfooter {
@@ -227,13 +221,13 @@ body {
   margin: 20px 30px;
   text-align: left;
   font-weight: 100;
-  padding: 0.4rem;
-  transition: background-color 0.5s;
+  padding: 0.6rem;
 }
 
 .finalfooter li:hover {
-  background-color: var(--color-cultured);
+  background-color: var(--color-eerie-black);
   opacity: 0.5;
+  border-radius: 10px;
 }
 
 .finalfooter a {
@@ -243,8 +237,7 @@ body {
 }
 
 .finalfooter a:hover {
-  color: var(--color-yankees-blue);
-  font-weight: bold;
+  width: 100%;
 }
 
 .payfooter h3 {
@@ -267,6 +260,84 @@ button {
   border: 1px solid black;
 }
 
+.promocion {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  text-align: center;
+  margin: 1rem 0;
+  background-color: var(--color-cultured);
+}
+
+.promocion p {
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-police-blue);
+}
+
+.nutri-img div {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 1rem;
+  background-image: url("../img/nutri/nutrmain.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.nutri-title {
+  margin: 4rem;
+}
+
+.nutri-title h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+
+.nutri-title p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nutri-product {
+  margin: 3rem 0 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nutri-img div {
+    background-image: url("../img/nutri/nutrmain.jpg");
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+  }
+  .nutri-title h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nutri-img div {
+    background-image: url("../img/nutri/nutrmain.jpg");
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0.8rem;
+  }
+  .nutri-title {
+    margin: 1rem auto;
+  }
+  .nutri-title h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
 .main-img {
   background-image: url("../img/blog/mainblog.jpg");
   background-size: cover;
@@ -514,7 +585,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 3rem auto;
+  margin: 1rem auto;
   padding: 20px;
 }
 
@@ -524,11 +595,11 @@ h2 {
 }
 
 .product img {
-  transition: transform 1s, box-shadow 1s;
+  transition: 0.15 transform ease, box-shadow 1s;
 }
 
 .product img:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   cursor: pointer;
   box-shadow: 2px 2px 4px #212A3E;
 }
@@ -592,11 +663,11 @@ h2 {
 }
 
 .clothes img {
-  transition: box-shadow 1s, transform 1s;
+  transition: 0.15s transform ease, box-shadow 1s;
 }
 
 .clothes img:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   cursor: pointer;
   box-shadow: 2px 2px 4px #212A3E;
 }
@@ -728,8 +799,8 @@ h2 {
     margin: 1rem;
   }
   .reds button {
-    width: 100%;
-    font-size: 0.8rem;
+    width: 50%;
+    font-size: 0.5rem;
     margin-left: 0;
   }
   .socialmedia img {
