@@ -45,13 +45,17 @@
     font-weight: bold;
 }
 .nutri-title p {
-    max-width: 800px;
+    max-width:1180px;
     text-align: center;
     margin: 0 auto;
 }
 
 .nutri-product {
     margin: 3rem 0 2rem 0;
+}
+
+.price {
+    font-weight: bold;
 }
 
 
@@ -85,10 +89,18 @@
 
     .nutri-title {
         margin: 1rem auto;
+        
     }
 
     .nutri-title h1 {
         font-size: 3rem;
         padding: 2rem;
+    }
+
+    .nutri-title p {
+        max-width:1180px;
+        text-align: center;
+        padding: 2rem;
+
     }
 }

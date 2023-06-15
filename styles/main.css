@@ -170,10 +170,6 @@ body {
   transition: font-size 1s;
 }
 
-.register:hover {
-  font-size: 0.8rem;
-}
-
 .reds p {
   margin: 20px 50px;
   font-size: 20px;
@@ -299,13 +295,17 @@ button {
 }
 
 .nutri-title p {
-  max-width: 800px;
+  max-width: 1180px;
   text-align: center;
   margin: 0 auto;
 }
 
 .nutri-product {
   margin: 3rem 0 2rem 0;
+}
+
+.price {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -335,6 +335,11 @@ button {
   }
   .nutri-title h1 {
     font-size: 3rem;
+    padding: 2rem;
+  }
+  .nutri-title p {
+    max-width: 1180px;
+    text-align: center;
     padding: 2rem;
   }
 }
@@ -663,26 +668,25 @@ h2 {
 }
 
 .clothes img {
+  width: 100%;
   transition: 0.15s transform ease, box-shadow 1s;
+  border: 1px solid var(--color-yankees-blue);
+  border-radius: 10px;
+  border-bottom: 2rem;
 }
 
 .clothes img:hover {
   transform: translateY(-8px);
   cursor: pointer;
-  box-shadow: 2px 2px 4px #212A3E;
-}
-
-.clothes img {
-  border: 1px solid #212A3E;
-  border-radius: 10px;
-  border-bottom: 2rem;
+  box-shadow: 2px 2px 4px var(--color-yankees-blue);
 }
 
 .clothes a {
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--color-sonic-silver);
-  margin-top: 1rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,25 @@
+@use "settings.scss";
+@use "components.scss";
+@use "elements.scss";
+@use "tools.scss";
+
+.ropa-img div {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1rem;
+    background-image: url("../img/ropa/mainropa.jpg");
+    background-size: cover;
+    background-position: top; 
+    
+}
+
+.ropamitad {
+    height: 300px;
+}
+
+@include tools.phone {
+    .store {
+        padding: 2rem;
+        text-align: center;
+    }
+}
